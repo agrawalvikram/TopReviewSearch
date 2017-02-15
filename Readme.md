@@ -20,8 +20,8 @@ java -version
 Jar from the project can be created by running following command from root directory of the project
 
 ```
-Linux / Mac OS: 	./gradlew clean jar
-Windows: 			./gradlew.bat clean jar
+Linux / Mac OS: 	./gradlew clean build jar
+Windows: 			./gradlew.bat clean build jar
 ```
 This will generate jar file at path ./build/libs/document-search.jar
 
@@ -37,7 +37,11 @@ Following command will make the server up.
 ```
 java -jar ./build/libs/document-search.jar ./reviewDocument/finefoods.txt 50000
 ```
+Alternatively directly through gradle, application can be run as
 
+```
+./gradlew run -PappArgs="['./reviewDocument/finefoods.txt','50000']"
+```
 ## Exposed APIs
 
 Once server is up and running, following API can be used to fetch the top review data
