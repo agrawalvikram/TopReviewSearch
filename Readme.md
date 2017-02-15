@@ -1,10 +1,10 @@
 # Top Review Search
 
-One Paragraph of project description goes here
+Search top K reviews from given set of review based on matching search words
 
 ## Introduction
 
-This project try to solve the problem for getting top K review from set of [Amazon fine foods reviews] (http://snap.stanford.edu/data/web-FineFoods.html). This application loads the reviews at startup and provides a [Rest API](http://www.restapitutorial.com/) to search top K documents based on given key words which needs to be present in the review.
+This project try to solve the problem for getting top K reviews from the set of [Amazon fine foods reviews] (http://snap.stanford.edu/data/web-FineFoods.html). This application loads the reviews at startup and provides a [Rest API](http://www.restapitutorial.com/) to search top K documents based on given key words which needs to be present in the review.
 
 ### Prerequisites
 
@@ -29,7 +29,7 @@ This will generate jar file at path ./build/libs/document-search.jar
 
 Generated jar expects two command line parameter as following.
 
-* File location of review and number of reviews to be read from the file. A sample reviews file is kept at [here](reviewDocument/finefoods.txt). Alternatively this file can be downloaded from this [link]((http://snap.stanford.edu/data/web-FineFoods.html)). 
+* File location of review and number of reviews to be read from the file. A sample reviews file is kept at [here](reviewDocument/finefoods.txt). Alternatively this file can be downloaded from this [link](http://snap.stanford.edu/data/web-FineFoods.html). 
 * Number of reviews to be loaded from the review file
 
 Following command will make the server up.
