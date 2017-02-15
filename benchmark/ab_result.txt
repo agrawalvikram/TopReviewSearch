@@ -1,3 +1,64 @@
+➜  TopReviewSearch git:(master) ab -n 1000 -c 10 http://localhost:4567/api/search\?count\=20\&query\=frutose,hunter,orange,decaffeination,conveyers,neatly
+This is ApacheBench, Version 2.3 <$Revision: 1748469 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Completed 700 requests
+Completed 800 requests
+Completed 900 requests
+Completed 1000 requests
+Finished 1000 requests
+
+
+Server Software:        Jetty(9.3.z-SNAPSHOT)
+Server Hostname:        localhost
+Server Port:            4567
+
+Document Path:          /api/search?count=20&query=frutose,hunter,orange,decaffeination,conveyers,neatly
+Document Length:        22922 bytes
+
+Concurrency Level:      10
+Time taken for tests:   2.853 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      23048000 bytes
+HTML transferred:       22922000 bytes
+Requests per second:    350.50 [#/sec] (mean)
+Time per request:       28.531 [ms] (mean)
+Time per request:       2.853 [ms] (mean, across all concurrent requests)
+Transfer rate:          7888.94 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   0.8      0       5
+Processing:     4   28  36.4     19     346
+Waiting:        4   27  34.2     19     293
+Total:          4   28  36.3     20     347
+WARNING: The median and mean for the initial connection time are not within a normal deviation
+        These results are probably not that reliable.
+
+Percentage of the requests served within a certain time (ms)
+  50%     20
+  66%     26
+  75%     33
+  80%     37
+  90%     49
+  95%     71
+  98%    143
+  99%    295
+ 100%    347 (longest request)
+
+
+__________________________________________________________________________________________________________________________________________
+
+
 ➜  document-search git:(master) ✗ ab -n 10000 -c 100 http://localhost:4567/api/search\?count\=20\&query\=frutose,hunter,orange,decaffeination,conveyers,expresso,occoured,constipation,circuit,neatly,incubator,sheds,carbonate
 This is ApacheBench, Version 2.3 <$Revision: 1748469 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
