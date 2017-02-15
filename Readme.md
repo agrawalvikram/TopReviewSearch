@@ -29,7 +29,7 @@ This will generate jar file at path ./build/libs/document-search.jar
 
 Generated jar expects two command line parameter as following.
 
-* File location of review and number of reviews to be read from the file. A sample reviews file is kept at [here](TopReviewSearch/blob/master/reviewDocument/finefoods.txt). Alternatively this file can be downloaded from this [link]((http://snap.stanford.edu/data/web-FineFoods.html)). 
+* File location of review and number of reviews to be read from the file. A sample reviews file is kept at [here](reviewDocument/finefoods.txt). Alternatively this file can be downloaded from this [link]((http://snap.stanford.edu/data/web-FineFoods.html)). 
 * Number of reviews to be loaded from the review file
 
 Following command will make the server up.
